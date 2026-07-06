@@ -8,3 +8,12 @@
 - Install nodemon and update scripts inside package.json
 - Difference b/w ^(caret) and ~(tilde)
 - What are the depenceices in package.json
+
+-Initialize git 
+-.gitignore
+- Create a new remote  repository on github
+- Push all code to the remote origin 
+- Play with routes and route extensions ex /hello , /hello/2 
+- Order of the routes are matter a lot
+- Install postman and make a workspace/collection > test api call
+- Write logic handle GET POST PUT PATCH DELETE API calls and test them on postman
