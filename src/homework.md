@@ -1,0 +1,10 @@
+- Create a repository
+- Initailize the repository
+- Difference between node_modules.package-lock.json,package.json 
+- Install express
+- Create a server
+- Listen to port 7777
+- Write request handlers for /test , /hello
+- Install nodemon and update scripts inside package.json
+- Difference b/w ^(caret) and ~(tilde)
+- What are the depenceices in package.json
