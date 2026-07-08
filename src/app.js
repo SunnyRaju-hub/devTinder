@@ -1,33 +1,23 @@
 const express = require("express")
 const app = express()
+const {adminAuth,userAuth} = require("./middlewares/auth")
+app.use("/admin",adminAuth)
+
+app.get("/user",userAuth,(req,res)=>{
+   res.send("Get the all user")
+})
+app.post("/user/login",(req,res)=>{
+    res.send("Succesfully login")
+})
+app.get("/admin/getAllData",userAuth,(req,res,next)=>{
+   res.send("All data sent")
+})
+
+app.get("/admin/deleteUser",(req,res)=>{
+    res.send("Deleted successfully")
+})
 
 
-
-app.use("/user",(req,res,next)=>{
-    console.log("handling the route user !!")
-    next()
-    // res.send("Response !!")
-},
-(req,res,next)=>{
-  console.log("handling the route user2 !!")
-//   res.send(" 2nd Response !!")
-next()
-},
-(req,res,next)=>{
-  console.log("handling the route user3 !!")
-//   res.send(" 3rd Response !!")
-next()
-},
-(req,res,next)=>{
-  console.log("handling the route user4 !!")
-//   res.send(" 4th Response !!")
-next()
-},
-(req,res,next)=>{
-  console.log("handling the route user5 !!")
-  res.send(" 5th Response !!")
-},
-)
 
 
 app.listen(3000,()=>{
