@@ -46,4 +46,8 @@ Season02-07
 - What is the difference between javascript and JSON object
 - Add the express.json() middleware to your app
 - Make your /signup app dynamic to receive data  from the end user
+- user.findone() with duplicate data which one will send 
+- API /user -  get user by emailId
+- API /feed- get all the users
+- API /user - get the user by id
 
