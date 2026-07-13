@@ -42,3 +42,8 @@ seaon-02-06
 - Create a post Api /singup   add data to the database
 - Push some documents from the postman using signup api
 
+Season02-07
+- What is the difference between javascript and JSON object
+- Add the express.json() middleware to your app
+- Make your /signup app dynamic to receive data  from the end user
+
